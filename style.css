@@ -1,0 +1,140 @@
+
+body {
+    margin: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #b7d1f9;
+}
+
+article {
+    background: rgb(249, 140, 140);
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+.Hobbies{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+a[ data-testid="test-user-social-twitter"]{
+    border: 1px solid black;
+    border-radius: 100px;
+    padding:  5px 15px;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+}
+a[data-testid="test-user-social-github"]{
+    border: 1px solid black;
+    border-radius: 100px;
+    padding:  5px 15px;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+}
+a[data-testid="test-user-social-linkedin"]{
+     border: 1px solid black;
+    border-radius: 100px;
+    padding:  5px 15px;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+h2 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+}
+
+p {
+    margin: 0 0 8px 0;
+    color: #343333;
+}
+
+ul {
+    padding-left: 18px;
+    margin: 6px 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+.row {
+   
+    gap: 80px;
+}
+
+@media (min-width: 700px) {
+    .row {
+        display: flex; 
+}
+
+.content {
+    flex: 1; 
+
+}
+
+.avatar-area {
+    width: 140px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+}
+
+@media (min-width: 700px) {
+    .avatar-area {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+}
+
+.avatar-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 999px; 
+    margin: 0 auto;
+    background: #e9eef3;
+}
+
+.avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+.controls{
+    text-align: left;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.controls input[type="text"],
+.controls input[type="url"],
+.controls input[type="file"] {
+    width: 100%;
+    padding: 6px;
+    margin-top: 6px;
+}
+
+.controls button {
+    margin-top: 6px;
+    padding: 6px 10px;
+}
+
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid #bde;
+    outline-offset: 2px;
+}

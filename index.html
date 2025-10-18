@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    <div class="row">
+
+      <div class="avatar-area">
+        <figure>
+          <div class="avatar-box">
+           <img id="avatarImg" data-testid="test-user-avatar" alt="User avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=60&auto=format&fit=crop">
+          </div>
+          <figcaption class="small">User photo</figcaption>
+        </figure>
+
+         <div class="controls">
+          <label class="small" for="avatarUrl">Paste image URL</label>
+          <input id="avatarUrl" type="url" placeholder="https://..." />
+          <button id="useUrlBtn">Use URL</button>
+
+          <label class="small" for="avatarFile">Or upload image</label>
+          <input id="avatarFile" type="file" accept="image/*" />
+        </div>
+      </div>
+
+      <div class="content">
+      
+        <header>
+          <h2 id="name" data-testid="test-user-name">Ugwuagbo Chizoba Michael</h2>
+          <div class="small">Role: Frontend Apprentice</div>
+        </header>
+
+        <section>
+          <p id="bio" data-testid="test-user-bio">I build accessible UI using simple HTML, CSS, and JavaScript. I like to keep things clear and testable.</p>
+          <button id="toggleBio">Show more</button>
+        </section>
+
+       <div class="small">Current time (ms): <span id="timeMs" data-testid="test-user-time">0</span></div>
+
+       <nav aria-label="Social links" data-testid="test-user-social-links">
+          <ul>
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <section>
+            <h3 class="small">Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Reading</li>
+              <li>Coding</li>
+              <li>Travelling</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="small">Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Unclear requirements</li>
+              <li>Poor accessibility</li>
+            </ul>
+          </section>
+        </div>
+
+      </div> 
+    </div>
+  </article>
+  <script src="./script.js"></script>
+</body>
+</html>
