@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./about.css">
+    <title>Document</title>
+</head>
+<body>
+     <main id="contact" aria-labelledby="contact-heading">
+    <h1 id="contact-heading">Contact Us</h1>
+
+    <form id="contact-form" novalidate aria-describedby="contact-description">
+      <p id="contact-description">
+        We'd love to hear from you! Please fill out the form below.
+      </p>
+
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="contact-name">Full Name</label>
+        <input 
+          type="text" 
+          id="contact-name" 
+          name="name" 
+          data-testid="test-contact-name" 
+          aria-describedby="test-contact-error-name" 
+          required 
+        />
+        <span 
+          id="test-contact-error-name" 
+          data-testid="test-contact-error-name" 
+          class="error-message" 
+          aria-live="polite">
+        </span>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="contact-email">Email Address</label>
+        <input 
+          type="email" 
+          id="contact-email" 
+          name="email" 
+          data-testid="test-contact-email" 
+          aria-describedby="test-contact-error-email" 
+          required 
+        />
+        <span 
+          id="test-contact-error-email" 
+          data-testid="test-contact-error-email" 
+          class="error-message" 
+          aria-live="polite">
+        </span>
+      </div>
+
+      <!-- Subject -->
+      <div class="form-group">
+        <label for="contact-subject">Subject</label>
+        <input 
+          type="text" 
+          id="contact-subject" 
+          name="subject" 
+          data-testid="test-contact-subject" 
+          aria-describedby="test-contact-error-subject" 
+          required 
+        />
+        <span 
+          id="test-contact-error-subject" 
+          data-testid="test-contact-error-subject" 
+          class="error-message" 
+          aria-live="polite">
+        </span>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label for="contact-message">Message</label>
+        <textarea 
+          id="contact-message" 
+          name="message" 
+          rows="5" 
+          data-testid="test-contact-message" 
+          aria-describedby="test-contact-error-message" 
+          required>
+        </textarea>
+        <span 
+          id="test-contact-error-message" 
+          data-testid="test-contact-error-message" 
+          class="error-message" 
+          aria-live="polite">
+        </span>
+      </div>
+
+      <!-- Submit Button -->
+      <button 
+        type="submit" 
+        data-testid="test-contact-submit"
+        aria-label="Submit Contact Form">
+        Send Message
+      </button>
+
+      <!-- Success Message -->
+      <div 
+        id="test-contact-success" 
+        data-testid="test-contact-success" 
+        class="success-message" 
+        aria-live="polite" 
+        hidden>
+        ✅ Your message has been sent successfully!
+      </div>
+    </form>
+  </main>
+  <hr />
+  <script src="./contact.js"></script>
+</body>
+</html>

@@ -130,7 +130,15 @@ ul {
     padding: 6px 10px;
 }
 
-
+section[data-testid="test-personal-page"] button{
+     border: 1px solid black;
+    border-radius: 100px;
+    padding:  5px 15px;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
 a:focus,
 button:focus,
 input:focus {
